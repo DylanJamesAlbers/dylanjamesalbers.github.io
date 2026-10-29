@@ -9,7 +9,8 @@
 <h3>This website</h3><p>This site does not use cookies, analytics or forms, and it does not collect personal information.</p>
 <h3>NaptimeOffice Pin Scheduler: what it reads and writes</h3>
 <ul><li><strong>Reads:</strong> the owner's own Pinterest account details (to confirm the correct business account is connected), the owner's boards (to find the destination board), and Pins the tool itself created (to confirm they posted).</li>
-<li><strong>Writes:</strong> new organic Pins of the shop's own product images on the owner's boards. The tool schedules and posts only Pins the owner has reviewed and approved.</li></ul>
+<li><strong>Writes:</strong> new organic Pins of the shop's own product images on the owner's boards, and creating or deleting the owner's own boards when needed (for example a temporary test board for the app demo, or a board to organize the shop's Pins). The tool schedules and posts only Pins the owner has reviewed and approved.</li></ul>
+<p><strong>Pinterest permissions requested (5):</strong> boards:read (see the owner's boards), boards:write (create and manage the owner's own boards), pins:read (see Pins the tool created), pins:write (create and delete the owner's Pins), user_accounts:read (confirm the connected account).</p>
 <h3>What is stored</h3>
 <p>The only Pinterest data stored is the OAuth access and refresh tokens for the owner's own account, kept in a local file readable only by the owner (permission 0600) on the owner's computer. Tokens are never printed, logged or shared. To prevent duplicate posts, a local log keeps only the IDs of Pins the tool itself created, next to the shop's own file name and Etsy listing number for each Pin. No board names or IDs or any other Pinterest data are stored; boards are looked up from the API each time a Pin is posted.</p>
 <h3>What is not done</h3>
